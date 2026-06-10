@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+
+   
+}
+
+.hamburger {
+    display: none;
+  
+}
+
+
+header {
+    position: fixed;
+    width: 100%;
+    background-color: #00927288;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.navbar a {
+    color: #000000;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+.hero-section{
+    background-image: url('assets/images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    max-width: 600px;
+}
+
+.hero-section-content {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    margin-left: 50px;
+
+}
+
+.hero-section-content h2{
+    font-size: 36px;
+   
+}
+
+.hero-section-content button{
+    background-color: #009272;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+} 
+
+.about {
+    padding:30px;
+}
+
+.about h2, .services h2, .hostels h2{
+    font-size: 36px;
+    text-align: center;
+}
+
+.about-content{
+    padding:30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.about-content button{
+    padding: 16px;
+    background-color: #009272;
+    color: white;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+}
+
+.video-card{
+    max-width: 700px;
+    padding: 30px;
+}
+
+.video-card video{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.info{
+    padding: 16px;
+    max-width: 600px;
+}
+
+.info h3{
+    font-size: 30px;
+}
+
+.info p{
+    font-size: 17px;
+}
+
+
+.services-cards{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.service-card{
+    padding: 30px;
+    text-align: center;
+   
+}
+
+.hostels{
+    padding: 30px;
+}
+
+
+
+.hostel-cards{
+    display: flex;
+}
