@@ -1,4 +1,3 @@
-@ -0,0 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/style/css.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <!-- Added defer to ensure DOM is loaded before script runs -->
-    <script src="assets/js/script.js" defer></script> 
+    <script src="assets/js/script.js"></script> 
     <title>Pamalo Hostel Booking System</title>
 </head>
 
@@ -31,24 +29,27 @@
     </header>
     <h2 class="payment-heading">Payment Page</h2>
     <form class="payment-form">
-        <label>Full Name</label>
+        <label class="dolo">Full Name</label>
         <input type="text" placeholder="Enter your full name" required>
 
-        <label>Email</label>
+        <label class="dolo">Email</label>
         <input type="email" placeholder="Enter your email" required>
 
-        <label>Amount</label>
+        <label class="dolo">Amount</label>
         <input type="number" placeholder="Enter amount" required>
 
-        <label>Payment Method</label>
+        <label class="dolo">Payment Method</label>
+
+        <nav class="payment-methods">
         <input type="radio" name="payment-method" value="credit-card" required> Credit Card
         <input type="radio" name="payment-method" value="Airtel Money" required> Airtel Money
         <input type="radio" name="payment-method" value="TNM mpamba" required> TNM mpamba
+        </nav>
 
-        <label>Card Number</label>
+        <label class="dolo">Card Number</label>
         <input type="text" placeholder="Enter your card number" required>
 
-        <label>Payment Password</label>
+        <label class="dolo">Payment Password</label>
         <input type="password" placeholder="Enter payment password" required>
 
         <button type="submit">Pay Now</button>
