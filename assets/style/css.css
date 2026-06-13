@@ -590,3 +590,71 @@ footer {
     padding: 20px;
     margin-top: 50px;
 }
+
+.login-section {
+    max-width: 450px;
+    margin: 120px auto 60px;
+    padding: 40px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+}
+
+.login-section h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+
+.login-section p {
+    margin-bottom: 18px;
+}
+
+.login-section label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.login-section input[type="text"],
+.login-section input[type="email"],
+.login-section input[type="tel"],
+.login-section input[type="password"] {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    outline: none;
+    transition: border-color 0.3s;
+    box-sizing: border-box;
+}
+
+.login-section input:focus {
+    border-color: #009272;
+}
+
+.login-section input[type="submit"] {
+    width: 100%;
+    padding: 14px;
+    background-color: #009272;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-section input[type="submit"]:hover {
+    background-color: #007a5e;
+}
+
+.login-section a {
+    color: #009272;
+}
