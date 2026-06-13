@@ -99,14 +99,12 @@ header {
     transition: opacity 1s ease-in-out;
 }
 
-/* FIX: Makes the active slide visible */
+
 .hero-slider .slide.active {
     opacity: 1; 
 }
 
-/* Image Paths */
-/* Note: Since your CSS file is in 'assets/style/', '../media/' correctly 
-   points to 'assets/media/'. If images still don't show, try '/assets/media/' */
+
 .hero-slider .slide-1 {
     background-image: url('../media/young-black-couple-sharing-ear-buds-listen-webinar-smartphone.jpg');
 }
@@ -393,6 +391,18 @@ header {
     color: white;
     padding: 25px;
     width: 100%;
+}
+
+#hostel-card1{
+    background-image: url('../media/bedroom_2.jpg');
+}
+
+#hostel-card2{
+background-image: url('../media/bedroom_10.jpg');
+}
+
+#hostel-card3{
+    background-image: url('../media/bedroom_1.jpg');
 }
 
 .hostel-card-content h3 {
