@@ -50,40 +50,6 @@ header {
     font-size: 18px;
 }
 
-<<<<<<< HEAD
-.navbar a:hover {
-    color: #f1f1f1;
-}
-
-main {
-    margin-top: 110px;
-}
-
-@media (max-width: 900px) {
-    .hamburger {
-        display: flex;
-    }
-
-    .navbar {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        background-color: rgba(0, 146, 114, 0.95);
-        position: absolute;
-        top: 100%;
-        left: 0;
-        padding: 10px 0;
-    }
-
-    .navbar.active {
-        display: flex;
-    }
-
-    .navbar a {
-        margin: 10px 20px;
-        width: calc(100% - 40px);
-    }
-=======
 .navbar a:hover{
     color:#00ffa6
 }
@@ -91,7 +57,6 @@ main {
 .navbar a.active {
     color: #00ffa6;
     font-weight: bold;
->>>>>>> 36016b171dfd6f764d2ec7f341eb78ce64b05f9a
 }
 
 
@@ -577,20 +542,8 @@ footer {
     font-size: 22px;
 }
 
-<<<<<<< HEAD
-.payment-form {
-    max-width: 400px;
-    margin: 30px auto;
-    padding: 110px;
-    background-color: #c8f1f1;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-    text-align: center;
-    font-family: new 'Times New Roman', Times, serif, sans-serif;
-=======
 .sidebar ul {
     list-style: none;
->>>>>>> 36016b171dfd6f764d2ec7f341eb78ce64b05f9a
 }
 
 .sidebar ul li {
@@ -617,34 +570,6 @@ footer {
     color: #fff;
     font-weight: bold;
 }
-<<<<<<< HEAD
-.login-section{
-    max-width: 420px;
-    padding: 30px;
-    margin: 100px auto;
-    background-color: #c8f1f1;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.login-section h2 {
-    margin-bottom: 20px;
-    color: #0f1513;
-}
-
-.login-section form {
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-}
-
-.login-section input[type="text"],
-.login-section input[type="password"] {
-    padding: 15px;
-    border: 1px solid #ddd;
-=======
 
 .main-content {
     flex: 1;
@@ -700,7 +625,6 @@ footer {
     padding: 10px 20px;
     background: #fff;
     border: 1px solid #e2e8f0;
->>>>>>> 36016b171dfd6f764d2ec7f341eb78ce64b05f9a
     border-radius: 8px;
     color: #475569;
     font-size: 14px;

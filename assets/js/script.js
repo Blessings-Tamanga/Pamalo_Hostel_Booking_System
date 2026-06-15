@@ -49,14 +49,6 @@ document.addEventListener('DOMContentLoaded', () => {
             slideInterval = setInterval(nextSlide, 5000);
         }
     }
-<<<<<<< HEAD
-
-    if (hamburger && navbar) {
-        hamburger.addEventListener('click', () => {
-            navbar.classList.toggle('active');
-        });
-    }
-=======
 });
 
 
@@ -67,5 +59,4 @@ loginForm.addEventListener("submit", function(e) {
     e.preventDefault(); 
 
     window.location.href = "dashboard.html";
->>>>>>> 36016b171dfd6f764d2ec7f341eb78ce64b05f9a
 });
