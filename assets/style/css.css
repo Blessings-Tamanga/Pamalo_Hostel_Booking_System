@@ -10,38 +10,78 @@ body {
 
 .hamburger {
     display: none;
+    cursor: pointer;
+}
+
+.hamburger span {
+    font-size: 26px;
+    color: #fff;
 }
 
 header {
     position: fixed;
-    top: 0%;
+    top: 0;
     width: 100%;
     background-color: #00927288;
     color: #fff;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    z-index: 1000; 
-    }
+    padding: 20px 25px;
+    z-index: 1000;
+}
 
 .logo h1 {
-    font-size: 24px;
+    font-size: 22px;
     font-weight: bold;
 }
 
 .navbar {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     padding: 10px;
 }
 
 .navbar a {
-    color: #000000;
+    color: #ffffff;
     text-decoration: none;
     margin: 0 15px;
     font-size: 18px;
+}
+
+.navbar a:hover {
+    color: #f1f1f1;
+}
+
+main {
+    margin-top: 110px;
+}
+
+@media (max-width: 900px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: rgba(0, 146, 114, 0.95);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        padding: 10px 0;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .navbar a {
+        margin: 10px 20px;
+        width: calc(100% - 40px);
+    }
 }
 
 
@@ -498,26 +538,36 @@ footer {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
     text-align: center;
     font-family: new 'Times New Roman', Times, serif, sans-serif;
-    
 }
 .dolo {
     color: #0f1513;
     font-size: 20px;
     font-weight: bold;
-
 }
 .login-section{
-    max-width: 400px;
-    padding: 10px;
+    max-width: 420px;
+    padding: 30px;
     margin: 100px auto;
     background-color: #c8f1f1;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
     text-align: center;
-    font-family: new 'Times New Roman', Times, serif, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
 }
 
-.login-section input{
+.login-section h2 {
+    margin-bottom: 20px;
+    color: #0f1513;
+}
+
+.login-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.login-section input[type="text"],
+.login-section input[type="password"] {
     padding: 15px;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -527,5 +577,41 @@ footer {
     transition: border-color 0.3s;
     width: 100%;
     font-family: inherit;
-    width
+}
+
+.login-section input[type="text"]:focus,
+.login-section input[type="password"]:focus {
+    border-color: #009272;
+}
+
+.login-section input[type="submit"] {
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    background-color: #009272;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.login-section input[type="submit"]:hover {
+    background-color: #007a5e;
+    transform: translateY(-1px);
+}
+
+.login-section p {
+    margin-top: 15px;
+    color: #333;
+    font-size: 16px;
+}
+
+.login-section a {
+    color: #009272;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-section a:hover {
+    text-decoration: underline;
 }

@@ -1,9 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
-
     const slides = document.querySelectorAll('.hero-slider .slide');
     const prevBtn = document.querySelector('.hero-controls .prev');
     const nextBtn = document.querySelector('.hero-controls .next');
-    
+    const hamburger = document.querySelector('.hamburger');
+    const navbar = document.querySelector('.navbar');
+
     if (slides.length > 0 && prevBtn && nextBtn) {
         let currentSlide = 0;
 
@@ -22,7 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
             showSlide(currentSlide);
         }
 
-     
         nextBtn.addEventListener('click', () => {
             nextSlide();
             resetInterval();
@@ -39,5 +39,11 @@ document.addEventListener('DOMContentLoaded', () => {
             clearInterval(slideInterval);
             slideInterval = setInterval(nextSlide, 5000);
         }
+    }
+
+    if (hamburger && navbar) {
+        hamburger.addEventListener('click', () => {
+            navbar.classList.toggle('active');
+        });
     }
 });
