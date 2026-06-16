@@ -1,68 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/css.css">
-    <script src="assets/js/script.js"></script>
-    <title>Pamalo Hostel Booking System</title>
+    <link rel="stylesheet" href="assets/style/css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="assets/js/script.js" defer></script>
+    <title>Contact - Pamalo Hostel Booking System</title>
 </head>
-
 <body>
     <header>
         <div class="topnav">
             <div class="logo">
                 <h1>Pamalo Hostel Booking System</h1>
             </div>
-            <div class="hamburger">
-                <span>&#9776;</span>
-            </div>
+            <div class="hamburger"><span>&#9776;</span></div>
         </div>
-        <nav>
+        <nav class="navbar">
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
             <a href="services.html">Services</a>
+            <a href="hostels.html">Hostels</a>
             <a href="contact.html">Contact</a>
+            <a href="Login.html">Login</a>
         </nav>
-
     </header>
     <main>
-<section class="contact">
+        <section class="contact">
             <h2>Contact Us</h2>
-            <P><i class="fas fa-map-marker-alt"></i> PAMALO Hostel Booking System<br>
-                area 47, Lilongwe, sector 4, Malawi<br>
-                lilongwe, malawi<br>
-                <p><i class="fas fa-clock"></i>    monday from 5pm to 8pm to sunday evening<br>
-                We'd love to hear from you! Get in touch with us today.</p>
-            </P>
-            <p>Have questions or need assistance? Reach out to our support team, and we'll be happy to help you with your hostel booking needs.</p>
-       
-            <div class="contact-container">
-            <div class="contact-info">
-                <p><i class="fas fa-envelope"></i> info@pamalo.com</p>
-                <p><i class="fas fa-phone"></i> +265 123 456 789</p>
-            </div>
+            <p>We'd love to hear from you! Get in touch with our support team.</p>
+            <div id="contact-alert" class="alert" style="display:none;"></div>
 
-            <div class="contact-form">
-                <form action="#" method="post">
-                    <input type="text" name="name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
-                    <textarea name="message" placeholder="Your Message" required></textarea>
-                    <button type="submit">Send Message</button>
-                </form>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <p><i class="fas fa-map-marker-alt"></i> Area 47, Lilongwe, Malawi</p>
+                    <p><i class="fas fa-envelope"></i> info@pamalo.com</p>
+                    <p><i class="fas fa-phone"></i> +265 123 456 789</p>
+                    <p><i class="fas fa-clock"></i> Mon-Sun: 8 AM - 8 PM</p>
+                </div>
+                <div class="contact-form">
+                    <form id="contact-form" action="#" method="post">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <input type="text" name="subject" placeholder="Subject" required>
+                        <textarea name="message" placeholder="Your Message" required></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
             </div>
-            </div>
+            <section class="gallery">
+    <h1>MEET THE TEAM</h1>
+    <div class="team">
+        <div class="team-member">
+            <img src="assets/media/image 1.jpg" alt="Team Member 1">
+            <h3>BLESSING TAMANGA</h3>
+            <p>Founder & CEO</p>
+        </div>
+        <div class="team-member">
+            <img src="assets/media/image 2 .jpg" alt="Team Member 2">
+            <h3>AKUZIKE NKHONO</h3>
+            <p>Chief Operating Officer</p>
+        </div>
+        <div class="team-member">
+            <img src="assets/media/image 3.jpg" alt="Team Member 3">
+            <h3>THANDO NYMERI</h3>
+            <p>Head of Customer Support</p>
+        </div>
+        <div class="team- member">
+            <img src="assets/media/image 4.jpg" alt="Team Member 4">
+            <h3>CHIKONDI KANYAMBA </h3>
+            <p>Marketing Manager</p>
+        </div>
+        <div class="team-member">
+            <img src="assets/media/image 5.jpg" alt="Team Member 5">
+            <h3>HAZEL SALIMU</h3>
+            <p>Lead Software Engineer</p>
+        </div>
+        <div class="team-member">
+            <img src="assets/media/image 6 .jpg" alt="Team Member 6">
+            <h3>YANKHO GADI</h3>
+            <p>Financial Analyst</p>
+        </div>
+        <div class="team-member">
+            <img src="assets/media/image 7.jpg" alt="Team Member 7">
+            <h3>HOPE BVUMBWE</h3>
+            <p>Customer Service Representative</p>
+        </div>
+        <div class="team-member">
+            <img src="assets/media/image 8.jpg" alt="Team Member 8">
+            <h3>RICHARD MBEWE JR.</h3>
+            <p>Business Development Manager</p>
+        </div>
+</section>
+
+
 
             <div class="map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.1234567890123!2d-122.1234567890123!3d37.1234567890123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f123456789012%3A0x1234567890123456!2sPamalo%20Hostel%20Booking%20System!5e0!3m2!1sen!2sus!4v1612345678901" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
-
         </section>
- </main>
+    </main>
     <footer>
         <p>&copy; 2026 Pamalo Hostel Booking System. All rights reserved.</p>
     </footer>
 </body>
-
 </html>
