@@ -27,107 +27,108 @@
             <a href="Login.html">Login</a>
         </nav>
     </header>
-    <main><section class="hostels">
-    <h2>Browse Hostels</h2>
+    <main>
+        <section class="hostels">
+            <h2>Browse Hostels</h2>
 
-    <p class="hostel-subtitle">
-        Search available rooms by date, price, type, and more.
-    </p>
+            <p class="hostel-subtitle">
+                Search available rooms by date, price, type, and more.
+            </p>
 
-    <div class="search-filters">
-        <div class="form-row">
+            <div class="search-filters">
+                <div class="form-row">
 
-            <div class="form-group">
-                <label>Check-in</label>
-                <input type="date" id="filter-checkin">
+                    <div class="form-group">
+                        <label>Check-in</label>
+                        <input type="date" id="filter-checkin">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Check-out</label>
+                        <input type="date" id="filter-checkout">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Max Price (MK)</label>
+                        <input type="number" id="filter-price" placeholder="e.g. 50000">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Capacity</label>
+                        <select id="filter-capacity">
+                            <option value="">Any</option>
+                            <option value="1">1 person</option>
+                            <option value="2">2 people</option>
+                            <option value="4">4 people</option>
+                            <option value="6">6 people</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Room Type</label>
+                        <select id="filter-type">
+                            <option value="">All Types</option>
+                            <option value="Single Room">Single Room</option>
+                            <option value="Double Room">Double Room</option>
+                            <option value="Shared Dorm">Shared Dorm</option>
+                            <option value="Suite">Suite</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <button id="search-btn" class="btn btn-primary">Search</button>
+                    </div>
+
+                </div>
             </div>
 
-            <div class="form-group">
-                <label>Check-out</label>
-                <input type="date" id="filter-checkout">
+            <div class="hostel-cards">
+                <div class="hostel-card" id="hostel-card1">
+                    <div class="hostel-card-content">
+                        <h3>Cozy Hostel</h3>
+                        <p>Experience comfort and affordability at Cozy Hostel, located in the heart of the city.</p>
+                        <button>Book Hostel</button>
+                    </div>
+                </div>
+
+                <div class="hostel-card" id="hostel-card2">
+                    <div class="hostel-card-content">
+                        <h3>Luxury Hostel</h3>
+                        <p>A home away from home at Luxury Hostel, located in the heart of the city.</p>
+                        <button>Book Hostel</button>
+                    </div>
+                </div>
+
+                <div class="hostel-card" id="hostel-card3">
+                    <div class="hostel-card-content">
+                        <h3>City Hostel</h3>
+                        <p>Your comfort is our commitment at City Hostel, located in the heart of the city.</p>
+                        <button>Book Hostel</button>
+                    </div>
+                </div>
+
+                <div class="hostel-card" id="hostel-card3">
+                    <div class="hostel-card-content">
+                        <h3>Safe haven Hostel</h3>
+                        <p>Where comfort meets convenience at Safe haven Hostel, located in the heart of the city.</p>
+                        <button>Book Hostel</button>
+                    </div>
+                </div>
+
+                <div class="hostel-card" id="hostel-card4">
+                    <div class="hostel-card-content">
+                        <h3>Grace Hostel</h3>
+                        <p>Comfort in every corner at Grace Hostel, located in the heart of the city.</p>
+                        <button>Book Hostel</button>
+                    </div>
+                </div>
             </div>
 
-            <div class="form-group">
-                <label>Max Price (MK)</label>
-                <input type="number" id="filter-price" placeholder="e.g. 50000">
-            </div>
-
-            <div class="form-group">
-                <label>Capacity</label>
-                <select id="filter-capacity">
-                    <option value="">Any</option>
-                    <option value="1">1 person</option>
-                    <option value="2">2 people</option>
-                    <option value="4">4 people</option>
-                    <option value="6">6 people</option>
-                </select>
-            </div>
-
-            <div class="form-group">
-                <label>Room Type</label>
-                <select id="filter-type">
-                    <option value="">All Types</option>
-                    <option value="Single Room">Single Room</option>
-                    <option value="Double Room">Double Room</option>
-                    <option value="Shared Dorm">Shared Dorm</option>
-                    <option value="Suite">Suite</option>
-                </select>
-            </div>
-
-            <div class="form-group">
-                <button id="search-btn" class="btn btn-primary">Search</button>
-            </div>
-
-        </div>
-    </div>
-
-    <div class="hostel-cards">
-        <div class="hostel-card" id="hostel-card1">
-            <div class="hostel-card-content">
-                <h3>Cozy Hostel</h3>
-                <p>Experience comfort and affordability at Cozy Hostel, located in the heart of the city.</p>
-                <button>Book Hostel</button>
-            </div>
-        </div>
-
-        <div class="hostel-card" id="hostel-card2">
-            <div class="hostel-card-content">
-                <h3>Luxury Hostel</h3>
-                <p>A home away from home at Luxury Hostel, located in the heart of the city.</p>
-                <button>Book Hostel</button>
-            </div>
-        </div>
-
-        <div class="hostel-card" id="hostel-card3">
-            <div class="hostel-card-content">
-                <h3>City Hostel</h3>
-                <p>Your comfort is our commitment at City Hostel, located in the heart of the city.</p>
-                <button>Book Hostel</button>
-            </div>
-        </div>
-
-        <div class="hostel-card" id="hostel-card3">
-            <div class="hostel-card-content">
-                <h3>Safe haven Hostel</h3>
-                <p>Where comfort meets convenience at Safe haven Hostel, located in the heart of the city.</p>
-                <button>Book Hostel</button>
-            </div>
-        </div>
-
-        <div class="hostel-card" id="hostel-card4">
-            <div class="hostel-card-content">
-                <h3>Grace Hostel</h3>
-                <p>Comfort in every corner at Grace Hostel, located in the heart of the city.</p>
-                <button>Book Hostel</button>
-            </div>
-        </div>
-    </div>
-
-    <div id="search-results-info"></div>
-    <div id="room-results" class="hostel-cards"></div>
-</section>
+            <div id="search-results-info"></div>
+            <div id="room-results" class="hostel-cards"></div>
+        </section>
     </main>
-    <footer>  
+    <footer>
         <p>&copy; 2026 Pamalo Hostel Booking System. All rights reserved.</p>
     </footer>
 </body>
