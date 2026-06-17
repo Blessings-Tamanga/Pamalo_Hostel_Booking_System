@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Pamalo Hostel Booking System - Dashboard</title>
+    <link rel="stylesheet" href="assets/style/css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="assets/js/script.js" defer></script>
+</head>
+<body class="dash-body">
+    <div class="sidebar">
+        <h2>Pamalo Hostel</h2>
+
+        <ul>
+            <li><a href="#" class="active">Dashboard</a></li>
+            <li><a href="hostels.html">Browse Hostels</a></li>
+            <li><a href="#">My Bookings</a></li>
+            <li><a href="payment.html">Payments</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="index.html">Logout</a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <div class="welcome-card">
+            <div class="welcome-avatar"><i class="fas fa-user"></i></div>
+            <div>
+                <h2>Welcome back, Guest!</h2>
+                <p>Manage your bookings and explore hostels from your dashboard.</p>
+            </div>
+        </div>
+
+        <div class="quick-actions">
+            <a href="hostels.html" class="quick-action-btn"><i class="fas fa-search"></i> Book a Hostel</a>
+            <a href="#" class="quick-action-btn"><i class="fas fa-calendar-alt"></i> My Bookings</a>
+            <a href="payment.html" class="quick-action-btn"><i class="fas fa-credit-card"></i> Make Payment</a>
+            <a href="#" class="quick-action-btn"><i class="fas fa-user-cog"></i> Edit Profile</a>
+        </div>
+
+        <div class="cards">
+            <div class="card">
+                <div class="card-icon green"><i class="fas fa-calendar-check"></i></div>
+                <div>
+                    <h3>My Bookings</h3>
+                    <p>3</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-icon blue"><i class="fas fa-bed"></i></div>
+                <div>
+                    <h3>Upcoming Stays</h3>
+                    <p>2</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-icon orange"><i class="fas fa-clock"></i></div>
+                <div>
+                    <h3>Pending Payments</h3>
+                    <p>1</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-icon purple"><i class="fas fa-heart"></i></div>
+                <div>
+                    <h3>Favorites</h3>
+                    <p>4</p>
+                </div>
+            </div>
+        </div>
+
+        <section class="table-section">
+            <h2>My Bookings</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Booking ID</th><th>Hostel</th>
+                        <th>Room</th><th>Check-In</th>
+                        <th>Check-Out</th><th>Status</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>B001</td><td>Cozy Hostel</td><td>Single Room</td>
+                        <td>12/06/2026</td><td>15/06/2026</td><td>Confirmed</td>
+                    </tr>
+
+                    <tr>
+                        <td>B002</td><td>Luxury Hostel</td><td>Double Room</td>
+                        <td>20/06/2026</td><td>25/06/2026</td><td>Pending</td>
+                    </tr>
+
+                    <tr>
+                        <td>B003</td><td>Cozy Hostel</td><td>Shared Dorm</td>
+                        <td>01/07/2026</td><td>05/07/2026</td><td>Checked In</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+</body>
+</html>
