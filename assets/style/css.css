@@ -176,11 +176,16 @@ header {
     padding: 30px;
 }
 
-.about h2, .services h2, .hostels h2, .contact h2 {
+.about h2, .services h2, .hostels h2, .contact h2,.about-header h2{
     font-size: 36px;
     text-align: center;
     margin-bottom: 30px;
 }
+
+.about-header{
+    padding-top:100px;
+}
+
 
 .about-content {
     padding: 30px;
@@ -334,7 +339,7 @@ background-image: url('../media/bedroom_10.jpg');
 }
 
 
-/* uyambile apa*/
+
 #hostel-card4{
 background-image: url('../media/bedroom_15.jpg');
 }
@@ -371,7 +376,67 @@ background-image: url('../media/bedroom_14.jpg');
 
 
 
+.hostel-subtitle {
+    text-align: center;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+
+.search-filters {
+    padding: 20px;
+    margin-bottom: 30px;
+    background: #f9f9f9;
+}
+
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 160px;
+}
+
+
+.form-group label {
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+
+.form-group input,
+.form-group select {
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.btn-primary {
+    padding: 8px;
+    border: 1px solid #555;
+    background: white;
+    cursor: pointer;
+}
+
+
+
 .contact {
+    text-align: center;
     padding: 60px 20px;
     display: flex;
     flex-direction: column;
@@ -386,7 +451,7 @@ background-image: url('../media/bedroom_14.jpg');
 }
 
 
-.contact > p {
+.contact  p {
     text-align: center;
     max-width: 800px;
     margin: 0 auto 40px;
@@ -914,6 +979,7 @@ footer {
     .cards .card p { font-size: 24px; }
     .table-section { padding: 16px; overflow-x: auto; }
 }
+
 /* --- payment --- */
 .payment-card {
     max-width: 520px;
